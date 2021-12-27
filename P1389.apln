@@ -4,7 +4,6 @@
     (⎕IO ⎕ML) ← 0 1                                              
     
     Sol ← {
-        t ← ⍬
-        ⊃⌽⍺{t ⊢← (⍺↑t),⍵,⍺↓t}¨⍵
+        ⍺[⌽⍒⍵]
     }
 :EndNamespace
